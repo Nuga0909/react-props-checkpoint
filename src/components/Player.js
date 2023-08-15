@@ -27,4 +27,4 @@ const Player = ({ name, team, nationality, jerseyNumber, age, imageUrl }) => {
     );
 };
 
-export default Player;
+export { playersObj, Player };
