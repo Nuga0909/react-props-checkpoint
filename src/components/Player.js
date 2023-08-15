@@ -6,7 +6,12 @@ import jsonPlayers from "../players";
 const playersObj = JSON.parse(jsonPlayers);
 // name, team, nationality, jerseyNumber, age, and an Image URL for the player.
 
-const Player = ({ name, team, nationality, jerseyNumber, age, imageUrl }) => {
+const Player = ({ name= "Mohamed Salah",
+    team= "Liverpool",
+    nationality= "Egypt",
+    jerseyNumber= "11",
+    age= "31",
+    imageUrl= "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSc4bnfG3zNmNB6Dk4C3vge8FxKkdFH64E96jiW8FKdS_04gDdF" }) => {
     return (
         <Card style={{ width: '18rem' }}>
             <Card.Img variant="top" src={imageUrl} />
