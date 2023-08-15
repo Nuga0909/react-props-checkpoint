@@ -6,9 +6,9 @@ import { playersObj } from "./Player";
 const PlayersList = () => {
     // playersObj.map((playerEach)=>Player)
 
-    return (<>
+    return (<div className="cont">
         {playersObj.map((playerEach) => (< Player name={playerEach.name} team={playerEach.team} nationality={playerEach.nationality} jerseyNumber={playerEach.jerseyNumber} age={playerEach.age} imageUrl={playerEach.imageUrl}/>))}
-    </>
+    </div>
     );
 };
 

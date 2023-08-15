@@ -7,3 +7,7 @@
   pointer-events: none;
 }
 
+.cont {
+  display: flex;
+  justify-content: space-between;
+}
